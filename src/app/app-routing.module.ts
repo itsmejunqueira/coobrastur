@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { customersComponent } from './customers/customers.component';
-import { loginComponent } from './login/login.component';
+import { LoginComponent } from './auth/login/login.component';
+import { AuthGuard } from './auth/_services/auth.guard';
+import { LoginGuard } from './auth/_services/login.guard';
 
 const routes: Routes = [];
 
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      {
-         path: 'customers', component: customersComponent 
-      },
-      { path: 'login', canActivate: [], component: loginComponent },
+      { path: 'login', canActivate: [LoginGuard], component: LoginComponent },
       {
         path: '',
-        redirectTo: 'login',
-        pathMatch: 'full'
-      }
+        canActivate: [AuthGuard],
+        loadChildren: () =>
+          import('./layout/layout.module').then((m) => m.LayoutModule),
+      },
     ])
   ],
   exports: [RouterModule]

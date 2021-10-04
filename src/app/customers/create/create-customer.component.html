@@ -1,0 +1,25 @@
+<div class="body ">
+    <div class="d-flex align-items-center page-title mt-3 ml-1">
+      <img class="logo" src="../../assets/user.png" class="mr-2" alt="usuario">
+      Painel de clientes
+    </div>
+    <hr>
+    <form [formGroup]="formCreate" (ngSubmit)="submit()">
+        <span class="bold">Novo Cliente</span>    <br>
+        <span>Informe os campos a seguir para cadastrar um novo cliente:</span> 
+        <div class="input-holder mt-4">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" formControlName="nome">
+            </div>
+            <div class="form-group">
+                <label for="profissao">Profissão</label>
+                <input type="text" class="form-control" id="profissao" formControlName="profissao">
+            </div>
+            <button type="submit" class="btn btn-primary" *ngIf="!editMode">Cadastrar</button>
+            <button type="submit" class="btn btn-primary" *ngIf="editMode">Editar</button>
+            <button type="button" class="btn btn-outline-primary ml-2" [routerLink]="['/clientes']">Voltar</button>
+
+        </div>
+    </form>
+</div>
