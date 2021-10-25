@@ -3,11 +3,9 @@
 
 Sistema de cadastro de usuário com login, listagem de clientes, criação e edição de novos usuários!  
 Possui uma página de lista de clientes:
-A partir da lista,  é ser possível editar um cliente.
-Nome/ Foto do perfil/ E-mail;
+A partir da lista, é possível editar um cliente com Nome/ Foto do perfil/ E-mail;
 Uma página para cadastrar um novo cliente:
-Os seguintes dados são apresentados na página:
-Nome/Profissão; 
+Os seguintes dados são apresentados na página: Nome/Profissão; 
 
 ![login](https://github.com/itsmejunqueira/coobrastur/blob/master/login.JPG)
 
