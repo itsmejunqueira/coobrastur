@@ -1,13 +1,21 @@
 # Coobrastur
 
 
-Sistema de cadastro de usuário com login, listagem de clientes, criação e edição de novos usuários! 
+Sistema de cadastro de usuário com login, listagem de clientes, criação e edição de novos usuários!  
+Possui uma página de lista de clientes:
+A partir da lista,  é ser possível editar um cliente.
+Nome/ Foto do perfil/ E-mail;
+Uma página para cadastrar um novo cliente:
+Os seguintes dados são apresentados na página:
+Nome/Profissão; 
 
 ![login](https://github.com/itsmejunqueira/coobrastur/blob/master/login.JPG)
 
 ![listagem](https://github.com/itsmejunqueira/coobrastur/blob/master/listaclientes.JPG)
 
 ![editar](https://github.com/itsmejunqueira/coobrastur/blob/master/editarcliente.JPG)
+
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
