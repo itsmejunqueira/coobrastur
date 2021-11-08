@@ -23,7 +23,7 @@
 ![editar](https://github.com/itsmejunqueira/coobrastur/blob/master/editarcliente.JPG)
 
 
-## 👓Revised Concepts
+## 👓
 
  - Angular 12
 - Html/ Css
